@@ -1,0 +1,16 @@
+{
+  "name": "moodcast",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.88.0",
+    "chart.js": "^4.5.1",
+    "react-chartjs-2": "^5.3.1"
+  }
+}

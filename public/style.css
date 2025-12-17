@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #87CEEB;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: underline;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FF69B4;
+}
+
+h1 {
+  text-align: center;
+  color: #FF69B4;
+}
+
+.mood-entry {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  background-color: #FF1493;
+}
+
+#weather-display {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#chart-container {
+  margin-top: 2rem;
+}

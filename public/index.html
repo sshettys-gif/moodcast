@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodCast</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="help.html">Help</a>
+  </nav>
+
+  <main>
+    <h1>MoodCast</h1>
+
+    <div id="weather-display">Loading weather...</div>
+
+    <div class="mood-entry">
+      <label for="mood-select">Select your mood:</label>
+      <select id="mood-select">
+        <option value="happy">Happy</option>
+        <option value="excited">Excited</option>
+        <option value="calm">Calm</option>
+        <option value="nervous">Nervous</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+      </select>
+      <button id="save-entry">Save Mood</button>
+    </div>
+
+    <canvas id="mood-chart" height="200"></canvas>
+  </main>
+
+  <script src="supabaseClient.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
