@@ -1,4 +1,3 @@
-// weather.js
 let weatherData = null;
 
 async function fetchWeather() {

@@ -1,4 +1,3 @@
-// entries.js
 let moodEntries = JSON.parse(localStorage.getItem('moodEntries') || '[]');
 const moodValues = { happy:5, excited:4, calm:3, nervous:2, sad:1, angry:0 };
 let chart = null;
@@ -13,7 +12,6 @@ function saveEntry() {
     temperature: weatherData.temperature
   };
 
-  // Remove previous entry for today
   moodEntries = moodEntries.filter(e => e.date !== entry.date);
   moodEntries.push(entry);
   localStorage.setItem('moodEntries', JSON.stringify(moodEntries));

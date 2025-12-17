@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MoodCast</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- ✅ Supabase CDN (MUST come before supabaseClient.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- ✅ Your Supabase client (creates window.supabase) -->
+  <script src="supabaseClient.js"></script>
 </head>
+
 <body>
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -17,8 +29,10 @@
   <main>
     <h1>MoodCast</h1>
 
+    <!-- Weather -->
     <div id="weather-display">Loading weather...</div>
 
+    <!-- Mood Entry -->
     <div class="mood-entry">
       <label for="mood-select">Select your mood:</label>
       <select id="mood-select">
@@ -32,10 +46,11 @@
       <button id="save-entry">Save Mood</button>
     </div>
 
+    <!-- Chart -->
     <canvas id="mood-chart" height="200"></canvas>
   </main>
 
-  <script src="supabaseClient.js"></script>
+  <!-- ✅ Main app logic LAST -->
   <script src="script.js"></script>
 </body>
 </html>
