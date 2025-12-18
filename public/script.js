@@ -14,9 +14,7 @@ if (document.getElementById('weather-display')) {
     angry: 0
   };
 
-  /* -----------------------------
-     FETCH WEATHER (Open-Meteo)
-  ------------------------------*/
+  //fetch weather
   async function fetchWeather() {
     try {
       const position = await new Promise((resolve, reject) => {
@@ -46,9 +44,7 @@ if (document.getElementById('weather-display')) {
     }
   }
 
-  /* -----------------------------
-     FETCH ENTRIES FROM SUPABASE
-  ------------------------------*/
+  
   async function fetchEntries() {
     const { data, error } = await supabase
       .from('mood_entries')
@@ -64,9 +60,7 @@ if (document.getElementById('weather-display')) {
     updateChart();
   }
 
-  /* -----------------------------
-     SAVE ENTRY TO SUPABASE
-  ------------------------------*/
+ 
   async function saveEntry() {
     if (!weatherData) return;
 
@@ -95,9 +89,7 @@ if (document.getElementById('weather-display')) {
     .getElementById('save-entry')
     .addEventListener('click', saveEntry);
 
-  /* -----------------------------
-     UPDATE CHART (Chart.js)
-  ------------------------------*/
+  //chartjs
   function updateChart() {
     const ctx = document
       .getElementById('mood-chart')
@@ -135,9 +127,7 @@ if (document.getElementById('weather-display')) {
     });
   }
 
-  /* -----------------------------
-     INIT LOAD
-  ------------------------------*/
+ 
   fetchWeather();
   fetchEntries();
 }
