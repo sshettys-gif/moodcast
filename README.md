@@ -37,8 +37,8 @@ MoodCast is a web application that allows users to track their mood alongside re
 
 ### APIs Used
 - **Open-Meteo API:** Free, real-time weather data  
-- **Chart.js:** Interactive charts to display mood trends  
-- **LocalStorage:** Stores mood entries in the browser  
+- **Chart.js:** Interactive charts to display mood trends 
+ **Days.js:** Provides reader friendly dates on chart 
 
 ### Background on Weather & Mental Health
 Research shows weather conditions can influence mood, energy levels, and overall mental health. MoodCast was created to help users identify patterns between weather and their emotional state.
