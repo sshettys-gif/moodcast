@@ -4,6 +4,10 @@ A brief description of what this project does and who it's for
 
 # MoodCast
 
+## Live Demo
+Check out the deployed app on Vercel: [MoodCast](https://moodcast.vercel.app)
+
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [User Guide](#user-guide)
